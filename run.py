@@ -17,8 +17,7 @@ def number_generator():
     """
     Function to generate the random number the player must guess correctly
     """
-    clear_terminal()
-
+    
 
 correct_answer = random.randint(1,10)
 guesses = 0
@@ -36,7 +35,6 @@ while(True):
             print("You are getting warmer the right number is between 0 and {}".format(player_guess))
     else:
         print("YOU GOT IT! Guesses to beat {}".format(guesses))
-        clear_terminal()
         break
     
 
