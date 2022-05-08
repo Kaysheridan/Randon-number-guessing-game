@@ -8,21 +8,15 @@ def game_description():
     statements.
     """
     print("Welcome to random numbers\n")
-    print(""" This is a guessing game, guess the number correctly in the
+    print(""" This is a guessing game, guess the number correctly in the 
     least amount of tries as you can.""")
     input("press enter to begin")
     
 
-def number_generator():
-    """
-    Function to generate the random number the player must guess correctly
-    """
-    
-
-correct_answer = random.randint(1,10)
+correct_answer = random.randint(0,10)
 guesses = 0
 
-while(True):
+while True:
     player_guess = int(input("Take a guess.."))
     guesses = +1
 
@@ -30,11 +24,14 @@ while(True):
         print("Woopsies, try again...")
 
         if correct_answer < player_guess:
-            print("You are getting warmer the right number is between 0 and {}".format(player_guess))
+            TXT = "You are getting warmer the right number is between 1 and {}"
+            print(TXT.format(player_guess))
         else:
-            print("You are getting warmer the right number is between 0 and {}".format(player_guess))
+            TXT_TWO = "You're getting warmer the right number is between {} and 10"
+            print(TXT_TWO.format(player_guess))
     else:
-        print("YOU GOT IT! Guesses to beat {}".format(guesses))
+        TXT_THREE = "YOU GOT IT! Guesses to beat {}"
+        print(TXT_THREE.format(player_guess))
         break
     
 
@@ -51,7 +48,6 @@ def main():
     Run all program functions
     """
     game_description()
-    number_generator() 
     clear_terminal()
 
 
