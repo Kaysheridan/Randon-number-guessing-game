@@ -18,7 +18,7 @@ def game_loop():
     """
     While loop that controls the loop and hints of the game 
     """
-    correct_answer = random.randint(0,10)
+    correct_answer = random.randint(1,10)
     guesses = 0
 
     while True:
