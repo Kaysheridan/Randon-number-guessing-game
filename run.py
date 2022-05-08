@@ -1,4 +1,4 @@
-import random #imports random module which is built-in
+import random  # imports random module which is built-in
 import os
 
 
@@ -37,6 +37,13 @@ def game_loop():
             break
 
 
+def validate_guess():
+    """
+    Function to give error message if anything bar a number is attempted as a
+    guess and also to make sure the attempted guess is within 0-100
+    """
+
+
 def clear_terminal():
     """
     Fuction that is called each time we need to clear the terminal throughout 
@@ -52,6 +59,7 @@ def main():
     clear_terminal()
     game_description()
     game_loop()
+    validate_guess()
 
 
 main()
