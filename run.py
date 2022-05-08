@@ -1,4 +1,4 @@
-import random 
+import random #imports random module which is built-in
 import os
 
 
@@ -18,16 +18,13 @@ def game_loop():
     """
     While loop that controls the loop and hints of the game 
     """
-    correct_answer = random.randint(1,10)
+    correct_answer = random.randint(1, 10)
     guesses = 0
-
     while True:
         player_guess = int(input("Take a guess.."))
         guesses = +1
-
         if correct_answer != player_guess:
             print("Woopsies, try again...")
-
             if correct_answer < player_guess:
                 txt = "You are getting warmer the right number is between 1 and {}"
                 print(txt.format(player_guess))
@@ -36,8 +33,8 @@ def game_loop():
                 print(txt_two.format(player_guess))
         else:
             txt_three = "YOU GOT IT! Guesses to beat {}"
-            print(txt_three.format(player_guess))
-            break      
+            print(txt_three.format(guesses))
+            break
 
 
 def clear_terminal():
