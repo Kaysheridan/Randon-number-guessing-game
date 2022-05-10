@@ -1,28 +1,25 @@
 import random  # imports random module which is built-in
 import os
 
+correct_answer = random.randint(1, 10)
+GUESS_AMOUNT = 0
 
-def game_description():
-    """
-    The First page to appear on the terminal, used to present the player
-    with print statements
-    """
-    print("Welcome to random numbers\n")
-    print(""" This is a guessing game, guess the number correctly in the
-    least amount of tries as you can.""")
-    input("press enter to begin")
-    clear_terminal()
+
+print("Welcome to random numbers\n")
+print("""
+This is a guessing game, guess the number correctly in the
+least amount of tries as you can.\n""")
+input("PRESS ENTER TO BEGIN...")
 
 
 def game_loop():
     """
-    While loop that controls the loop and hints of the game 
+    The First page to appear on the terminal, used to present the player
+    with print statements
     """
-    correct_answer = random.randint(1, 10)
-    guesses = 0
     while True:
         player_guess = int(input("Take a guess.."))
-        guesses = +1
+        guess_amount = +1
         if correct_answer != player_guess:
             print("Woopsies, try again...")
             if correct_answer < player_guess:
@@ -33,15 +30,8 @@ def game_loop():
                 print(txt_two.format(player_guess))
         else:
             txt_three = "YOU GOT IT! Guesses to beat {}"
-            print(txt_three.format(guesses))
+            print(txt_three.format(guess_amount))
             break
-
-
-def validate_guess():
-    """
-    Function to give error message if anything bar a number is attempted as a
-    guess and also to make sure the attempted guess is within 0-100
-    """
 
 
 def clear_terminal():
@@ -57,9 +47,7 @@ def main():
     Run all program functions
     """
     clear_terminal()
-    game_description()
     game_loop()
-    validate_guess()
 
 
 main()
