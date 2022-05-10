@@ -14,8 +14,7 @@ input("PRESS ENTER TO BEGIN...")
 
 def game_loop():
     """
-    The First page to appear on the terminal, used to present the player
-    with print statements
+    For loop which handles the values errors and logic of the game
     """
     for guesses in range(10):
         print('Take a guess...')
