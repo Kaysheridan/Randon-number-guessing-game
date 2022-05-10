@@ -38,6 +38,12 @@ def game_loop():
             break
 
 
+def play_again():
+    """
+    Function to give the player an option to play again or quit
+    """
+
+
 def clear_terminal():
     """
     Fuction that is called each time we need to clear the terminal throughout 
