@@ -44,10 +44,17 @@ def play_again():
     """
     Function to give the player an option to play again or quit
     """
-    if input("Play again? (y/n) ") == 'y':
-        game_loop()
-    else:
-        exit
+    clear_terminal()
+    while True:
+        print('(a) Play again?\n')
+        print('(q) Quit\n')
+        choose = input('Make your choice: ').lower()
+        if choose == 'a':
+            game_loop()
+        elif choose == 'q':
+            return False
+        else:
+            print(f'Not a correct choice : {choose}')
 
 
 def clear_terminal():
@@ -64,6 +71,7 @@ def main():
     """
     clear_terminal()
     game_loop()
+    play_again()
 
 
 main()
