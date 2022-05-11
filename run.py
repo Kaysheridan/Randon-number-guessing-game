@@ -4,7 +4,7 @@ import os
 correct_answer = random.randint(1, 100)
 
 
-print("Welcome to random numbers\n")
+print("WELCOME TO RANDOM NUMBERS!\n")
 print("""
 This is a guessing game, guess the number correctly in the
 least amount of tries as you can.\n""")
@@ -46,9 +46,9 @@ def play_again():
     """
     clear_terminal()
     while True:
-        print('(a) Play again?\n')
-        print('(q) Quit\n')
-        choose = input('Make your choice: ').lower()
+        print('Play again? (A) \n')
+        print('Quit (Q) \n')
+        choose = input('Think you can do better? ').lower()
         if choose == 'a':
             game_loop()
         elif choose == 'q':
