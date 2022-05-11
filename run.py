@@ -1,14 +1,11 @@
 import random  # imports random module which is built-in
 import os
 
-correct_answer = random.randint(1, 100)
 
-
-print("WELCOME TO RANDOM NUMBERS!\n")
-print("""
-This is a guessing game, guess the number correctly in the
-least amount of tries as you can.\n""")
-input("PRESS ENTER TO BEGIN...")
+print("🆁 🅰 🅽 🅳 🅾 🅼   🅽 🆄 🅼 🅱 🅴 🆁 🆂\n")
+print('This is a guessing game, guess the number correctly in',
+      'the least amount of tries as you can.\n')
+input("PRESS ANY KEY TO BEGIN...")
 
 
 def game_loop():
@@ -16,6 +13,7 @@ def game_loop():
     For loop which handles the values errors and logic of the game
     """
     guess_amount = 0
+    correct_answer = random.randint(1, 100)
 
     for guesses in range(100):
         print('Take a guess...')
@@ -38,13 +36,12 @@ def game_loop():
             txt = "YOU GOT IT! Guesses to beat {}"
             print(txt.format(guess_amount))
             break  # Correct number guessed
-
+            
 
 def play_again():
     """
     Function to give the player an option to play again or quit
     """
-    clear_terminal()
     while True:
         print('Play again? (A) \n')
         print('Quit (Q) \n')
@@ -55,6 +52,7 @@ def play_again():
             return False
         else:
             print(f'Not a correct choice : {choose}')
+            clear_terminal()
 
 
 def clear_terminal():
