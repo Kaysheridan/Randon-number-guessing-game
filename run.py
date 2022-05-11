@@ -35,7 +35,7 @@ def game_loop():
         elif player_guess < correct_answer:
             print("HINT! Go higher...")
         else:
-            txt = "YOU GOT IT! guesses to beat {}"
+            txt = "YOU GOT IT! Guesses to beat {}"
             print(txt.format(guess_amount))
             break  # Correct number guessed
 
@@ -44,6 +44,10 @@ def play_again():
     """
     Function to give the player an option to play again or quit
     """
+    if input("Play again? (y/n) ") == 'y':
+        game_loop()
+    else:
+        exit
 
 
 def clear_terminal():
