@@ -1,8 +1,7 @@
 import random  # imports random module which is built-in
 import os
 
-correct_answer = random.randint(1, 10)
-GUESS_AMOUNT = 0
+correct_answer = random.randint(1, 100)
 
 
 print("Welcome to random numbers\n")
@@ -16,8 +15,11 @@ def game_loop():
     """
     For loop which handles the values errors and logic of the game
     """
-    for guesses in range(10):
+    guess_amount = 0
+
+    for guesses in range(100):
         print('Take a guess...')
+        guess_amount += 1
         while True:
             try:
                 player_guess = int(input())
@@ -26,7 +28,7 @@ def game_loop():
                 print("Thats not a number, please enter a number")
         if player_guess < 1:
             print("Please enter a number between 1 and 10")
-        elif player_guess > 10:
+        elif player_guess > 100:
             print("Please enter a number between 1 and 10")
         elif player_guess > correct_answer:
             print("HINT! Go lower...")
@@ -34,8 +36,8 @@ def game_loop():
             print("HINT! Go higher...")
         else:
             txt = "YOU GOT IT! guesses to beat {}"
-            print(txt.format(GUESS_AMOUNT))
-            break
+            print(txt.format(guess_amount))
+            break  # Correct number guessed
 
 
 def play_again():
