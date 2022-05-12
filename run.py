@@ -36,7 +36,6 @@ def game_loop():
             txt = "YOU GOT IT! Guesses to beat {}"
             print(txt.format(guess_amount))
             break
-    clear_terminal()
 
 
 def play_again():
@@ -44,9 +43,10 @@ def play_again():
     Function to give the player an option to play again or quit
     """
     while True:
+        print('Think you can do better?')
         print('Play again? (A) \n')
         print('Quit (Q) \n')
-        choose = input('Think you can do better? ').lower()
+        choose = input('Make your choice...').lower()
         if choose == 'a':
             clear_terminal()
             game_loop()
