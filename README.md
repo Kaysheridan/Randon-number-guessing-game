@@ -1,31 +1,21 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Random Numbers
+Is a game where the player must guess the random number chosen by the computer, the amount of attempts someone has is limitless but the aim of the game is to guess in the least amount of tries as possible. The number range for the game is between 1 and 1000. 
 
-Welcome Kaysheridan,
+## Project Purpose
+The Purpose of the game is to provide the user with a simple and interactive game through a command-line application. The game is intended to be simple and entertaining while making the user compete against themselves with the feature to try and beat how many guesses you got the correct number in. 
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
-## Reminders
+## User Experience 
+### App owner goals 
+- An app that is clear and easily navigated.
+- Gives the user options to input data. 
+- Gives the user feedback after data has been input. 
+- Clearly explain the rules and function of the app.
+- Give the user multiple options to itput or choose a path throughout the app. 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+### App user goals 
+- An app that is easy to navigate. 
+- An app with a clear purpose and directions of use. 
+- An option to input data.
+- To be given the amount of guesses I got the correct number in. 
+- An app that is entertaining and interactive.
