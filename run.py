@@ -2,15 +2,21 @@ import random  # imports random module which is built-in
 import os
 
 
-print("🆁 🅰 🅽 🅳 🅾 🅼   🅽 🆄 🅼 🅱 🅴 🆁 🆂\n")
-print('This is a guessing game, guess the number correctly in',
-      'the least amount of tries as you can.\n')
-input("PRESS ANY KEY TO BEGIN...")
+def game_instructions():
+    """
+    First the the player will see which explains how to play the
+    game and give the player the option to begin the game
+    """
+    print("🆁 🅰 🅽 🅳 🅾 🅼   🅽 🆄 🅼 🅱 🅴 🆁 🆂\n")
+    print('WELCOME TO RANDOM NUMBERS!\n')
+    print('This is a guessing game, guess the number correctly in',
+          'the least amount of tries as you can.\n')
+    input("ᴘʀᴇss ᴀɴʏ ᴋᴇʏ ᴛᴏ ʙᴇɢɪɴ...")
 
 
 def game_loop():
     """
-    For loop which handles the values errors and logic of the game
+    For loop which handles the value errors and logic of the game
     """
     guess_amount = 0
     correct_answer = random.randint(1, 100)
@@ -71,6 +77,7 @@ def main():
     """
     Run all program functions
     """
+    game_instructions()
     clear_terminal()
     game_loop()
     play_again()
