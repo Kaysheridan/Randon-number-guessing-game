@@ -61,10 +61,9 @@ def play_again():
             clear_terminal()
             game_loop()
         elif choose == 'q':
-            return False
-        else:
-            print(f'Not a correct choice : {choose}')
             clear_terminal()
+            game_instructions()
+            return False
 
 
 def clear_terminal():
