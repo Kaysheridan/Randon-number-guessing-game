@@ -58,6 +58,27 @@ Module used in the main loop of the game, used to choose a random number for the
 Module used to create the clear terminal function. This removes all previous inputs and outputs from the terminal, this helps with the flow of the game. 
 
 ## User Testing 
+- Testing was carried out after each feature was added to ensure the functionality of the game remained intact when code was added edited or removed. 
+
+- User testing was conducted during the development of this project
+- As a user I would expect to know what the game is and how to play. This test passed. 
+- As a user I would expect the app to continue when I press any key. This test passed. 
+- As a user I would expect to the game to begin when I make a guess. This test passed. 
+- As a user I would expect to know when my guess is wrong. This test passed. 
+- As a user I would expect to know when my guess is correct. This test passed. 
+- As a user I would expect to know how many guesses I made to get the correct number. This test passed. 
+- As a user I would expect the options to play again or quit to have different functionalities. This test passed. 
+
+## Pep8 Validator
+- <img width="1042" alt="Screenshot 2022-05-14 at 09 48 56" src="https://user-images.githubusercontent.com/95246821/168418524-a94cc1c2-b301-450c-a709-ee5448225c77.png">
+
+## Bugs 
+### Bugs that occurred during development that are now fixed. 
+
+-  There was an issue with placing the clear terminal at certain points in game when needed, when placed after the break in the game_loop function it would print the 'You got it message' and then immediately clear before the user would have had a chance to read the messgae. This lead me to adding the 'think you can do better' message and 'press any key to continue' input in the play_again function which allowed me to call the clear terminal function when the player would press a key to continue. 
+
+
+
 
 
 

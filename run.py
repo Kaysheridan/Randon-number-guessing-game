@@ -69,7 +69,7 @@ def play_again():
 
 def clear_terminal():
     """
-    Fuction that is called each time we need to clear the terminal throughout 
+    Fuction that is called each time we need to clear the terminal throughout
     the application when necessary.
     """
     os.system("clear")
