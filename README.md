@@ -42,3 +42,23 @@ The Purpose of the game is to provide the user with a simple and interactive gam
 - The choice to play again or quit is then given to the player. 
 - Choosing to play again brings the user back to take a guess and quit brings the user back to the welcome message. 
 
+## Future Features
+- I would like to add the option for the user to turn off hints if they wish to make the game harder. 
+- I would like to make the game multiplayer where two players can choose to play against each other and pick the others persons random number and who ever guesses the correct number first wins. 
+- I would like to add a login for player who can see their previous game history. 
+
+## Language Used 
+- Python 3.0
+
+## Modules & API's Used
+- Random 
+Module used in the main loop of the game, used to choose a random number for the player to guess. 
+
+- OS 
+Module used to create the clear terminal function. This removes all previous inputs and outputs from the terminal, this helps with the flow of the game. 
+
+## User Testing 
+
+
+
+
