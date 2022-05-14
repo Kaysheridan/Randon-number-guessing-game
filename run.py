@@ -21,7 +21,7 @@ def game_loop():
     For loop which handles the value errors and logic of the game
     """
     guess_amount = 0
-    correct_answer = random.randint(1, 100)
+    correct_answer = random.randint(1, 10)
 
     for guesses in range(100):
         print('Take a guess...')
@@ -63,7 +63,9 @@ def play_again():
         elif choose == 'q':
             clear_terminal()
             game_instructions()
+            clear_terminal()
             game_loop()
+            play_again()
             return False
 
 
