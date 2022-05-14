@@ -19,3 +19,10 @@ The Purpose of the game is to provide the user with a simple and interactive gam
 - An option to input data.
 - To be given the amount of guesses I got the correct number in. 
 - An app that is entertaining and interactive.
+
+## Functional Scope 
+- The below chart shoes the logical flow of the Random Numbers game.
+<img width="549" alt="Screenshot 2022-05-14 at 08 27 41" src="https://user-images.githubusercontent.com/95246821/168415731-44d29be6-0808-4429-b775-2c7785852200.png">
+
+## Features 
+-

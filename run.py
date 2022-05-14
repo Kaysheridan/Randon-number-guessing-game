@@ -11,8 +11,8 @@ def game_instructions():
     print('WELCOME TO RANDOM NUMBERS!\n')
     print('This is a guessing game! There is no guess limit.. The aim of the',
           'game is to guess the number correctly in the least amount of',
-          'tries as you can.\n' 'The number is somewhere between 1 and 1000\n',
-          'Best of luck!')
+          'tries as you can.\n')
+    print('The number you are looking for is somewhere between 1 and 1000\n')
     input("ᴘʀᴇss ᴀɴʏ ᴋᴇʏ ᴛᴏ ʙᴇɢɪɴ...")
 
 
