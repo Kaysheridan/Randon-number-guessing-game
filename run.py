@@ -12,7 +12,7 @@ def game_instructions():
     print('This is a guessing game! There is no guess limit.. The aim of the',
           'game is to guess the number correctly in the least amount of',
           'tries as you can.\n')
-    print('The number you are looking for is somewhere between 1 and 1000\n')
+    print('The number you are looking for is somewhere between 1 and 100\n')
     input("ᴘʀᴇss ᴀɴʏ ᴋᴇʏ ᴛᴏ ʙᴇɢɪɴ...")
 
 
@@ -21,9 +21,9 @@ def game_loop():
     For loop which handles the value errors and logic of the game
     """
     guess_amount = 0
-    correct_answer = random.randint(1, 10)
+    correct_answer = random.randint(1, 100)
 
-    for guesses in range(100):
+    for guesses in range(1000):
         print('Take a guess...')
         guess_amount += 1
         while True:
@@ -33,9 +33,9 @@ def game_loop():
             except ValueError:
                 print("Thats not a number, please enter a number")
         if player_guess < 1:
-            print("Please enter a number between 1 and 10")
+            print("Please enter a number between 1 and 100")
         elif player_guess > 100:
-            print("Please enter a number between 1 and 10")
+            print("Please enter a number between 1 and 100")
         elif player_guess > correct_answer:
             print("HINT! Go lower...")
         elif player_guess < correct_answer:
