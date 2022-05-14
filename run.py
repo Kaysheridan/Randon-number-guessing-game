@@ -63,6 +63,7 @@ def play_again():
         elif choose == 'q':
             clear_terminal()
             game_instructions()
+            play_again()
             return False
 
 
