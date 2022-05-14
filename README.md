@@ -77,6 +77,26 @@ Module used to create the clear terminal function. This removes all previous inp
 
 -  There was an issue with placing the clear terminal at certain points in game when needed, when placed after the break in the game_loop function it would print the 'You got it message' and then immediately clear before the user would have had a chance to read the messgae. This lead me to adding the 'think you can do better' message and 'press any key to continue' input in the play_again function which allowed me to call the clear terminal function when the player would press a key to continue. 
 
+# Deployment 
+- Go to the Heroku site.
+- Log in.
+- Click the "New" button and click "Creat new app"
+- Provide a name for the app in the "App name" field.
+- Select your region from the dropdown menu.
+- Click "Create App".
+- Then proceed to the settings tab.
+- Click "config vars".
+- Enter a KEY of PORT and it's value of 8000. The click "add".
+- Next click "Add buildpack".
+- The python buildpack needs to be added first followed by the nodejs buildpack.
+- After the buildpacks been added, proceed to the deploy tab.
+- In the terminal on git hub type "heroku login -i"
+- You will then be prompted to input yout log in credentials in the terminal
+- It will advise if the log in is successful. 
+- Run 'git push heroku main' after any/all changes have be made. 
+- Click 'open app' on the Heroku website. 
+
+
 
 
 
