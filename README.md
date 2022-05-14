@@ -25,4 +25,20 @@ The Purpose of the game is to provide the user with a simple and interactive gam
 <img width="549" alt="Screenshot 2022-05-14 at 08 27 41" src="https://user-images.githubusercontent.com/95246821/168415731-44d29be6-0808-4429-b775-2c7785852200.png">
 
 ## Features 
--
+### Welcome Message
+- The user is given a welcome messgae followed by instructions on how to play the game.
+- The user is then asked to press any key to continue to the game
+
+### The game 
+- The user is then asked to take a guess
+- If the user guesses a number that is too high they will get a go lower hint 
+- If the user guesses a number that is too low they will get a go higher hint. 
+- If the user uses anything but an integer for their guess they are met with an error.
+- When the user guesses the correct number they get a 'You got it!' message followed by how many guesses they got it in.
+- The amount of guesses they got it in is also the amount of guesses they are promted to beat. 
+
+### Play again
+- The user is again to press anykey to continue 
+- The choice to play again or quit is then given to the player. 
+- Choosing to play again brings the user back to take a guess and quit brings the user back to the welcome message. 
+
